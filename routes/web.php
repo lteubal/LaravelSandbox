@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('resizeImage', 'ImagePreparationController@resizeImage');
+Route::post('resizeImagePost', 'ImagePreparationController@resizeImagePost')->name('resizeImagePost');
